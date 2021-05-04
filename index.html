@@ -54,7 +54,8 @@
                   </div>
                   <div class="sixteen wide column">
                     <h2>Resume</h2>
-                    <p>&mdash;Hello it's me Mario!</p>
+                    <input type="button" style="border: none; cursor: pointer; background-color: white; font-size: larger;" value="&mdash;Hello it's me Mario!" onclick="play()">
+                      <audio id="audio" src="images/its-me-mario.mp3"></audio>
                   </div>
                 </div>
               </div>
@@ -195,5 +196,11 @@
         </div>
       </article>
     </main>
+    <script>
+      function play() {
+        const audio = document.getElementById("audio");
+        audio.play();
+      }
+    </script>
   </body>
 </html>
